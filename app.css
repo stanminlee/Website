@@ -1,0 +1,335 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
+}
+
+#homepage {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(Headshot.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: transparent;
+    position: fixed; 
+    top: 0;
+
+    z-index: 1;
+
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    font-family: "Poppins";
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content2 {
+    width: 100%;
+    top: 80%;
+    text-align: center;
+    color: white;
+}
+
+#experience {
+    width: 100%;
+    padding: 40px 0;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(computing.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.title-text {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.text-container {
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+}
+
+button {
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    color: white;
+    font-family: "Poppins";
+    cursor: pointer;
+    background: black;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: pink;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%
+}
+
+button:hover {
+    border: none;
+}
+
+#projects{
+    width: 100%;
+    padding: 40px 0;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(stanford.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 1px;
+}
+
+s_header {
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+}
+
+b_header {
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 3rem;
+    color: black;
+    letter-spacing: 1px;
+}
+
+text {
+    font-family: "Poppins";
+    color: white;
+}
+
+l_text {
+    font-family: "Poppins";
+    color: white;
+    margin-left: 0;
+}
+
+b_text {
+    font-family: "Poppins";
+    color: black;
+}
+
+/* for the Bhamla Lab Class */
+
+.e1 button {
+    width: 100px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    color: white;
+    font-family: "Poppins";
+    cursor: pointer;
+    background: black;
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.e1 {
+    width: 80%;
+    height: 80%;
+    background: white;
+    border-radius: 6px;
+    position: fixed;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 50%;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 2;
+}
+
+.open-e1 {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* popup for HSU */
+
+.e2 button {
+    width: 100px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    color: white;
+    font-family: "Poppins";
+    cursor: pointer;
+    background: black;
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.e2 {
+    width: 80%;
+    height: 80%;
+    background: white;
+    border-radius: 6px;
+    position: fixed;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 50%;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 2;
+}
+
+.open-e2 {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* projects */
+
+.p1 button {
+    width: 100px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    color: white;
+    font-family: "Poppins";
+    cursor: pointer;
+    background: black;
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.p1 {
+    width: 80%;
+    height: 80%;
+    background: white;
+    border-radius: 6px;
+    position: fixed;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 50%;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 2;
+}
+
+.open-p1 {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.p2 button {
+    width: 100px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    color: white;
+    font-family: "Poppins";
+    cursor: pointer;
+    background: black;
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.p2 {
+    width: 80%;
+    height: 80%;
+    background: white;
+    border-radius: 6px;
+    position: fixed;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 50%;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 2;
+}
+
+.open-p2 {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
