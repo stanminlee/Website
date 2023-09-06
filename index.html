@@ -3,6 +3,7 @@
 <head>
     <!-- font references are here -->
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- reference to the css file -->
     <link rel = "stylesheet" href = "app.css"/>
@@ -17,14 +18,16 @@
     <!-- the navbar is at the top of the website and directs users to certain areas -->
     <div class = "navbar">
             <ul> 
-                <li><a href = "#homepage"> About </a></li>
+                <li><a href = "#about"> About </a></li>
                 <li><a href = "#experience"> Experience </a></li>
                 <li><a href = "#projects"> Projects </a></li>
+                <li><a href="https://github.com/stanminlee" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://linkedin.com/in/stanminlee" target="_blank"><i class="fab fa-linkedin"></i></a></li>
             </ul>
     </div>
 
     <!-- homepage of the website -->
-    <section id = "homepage">
+    <section id = "about">
 
         <!-- content in the middle of the screen of the homepage -->
         <div class = "content">
@@ -44,22 +47,19 @@
             <header>
                 EXPERIENCE
             </header>
-            <div class = "text-container"> 
+            <div class = "text-container">
                 <text>
                     With a solid technical background and interpersonal skills, 
                     I offer a skillset that allows me to excel in various projects and team environments.
                 </text>
             </div>
-        </div>
-
-        <!-- material going over my experiences -->
-        <div class = "content2"> 
+            
             <button type = "button" onclick = openE1()> <span></span> The Bhamla Lab </button>
-            <button type = "button" onclick = openE2()> <span></span> Hmong Student Union </button> 
+            <button type = "button" onclick = openE2()> <span></span> Stanford HSU </button> 
 
             <div class = "e1" id = "e1"> 
                 <b_header> Research Intern </b_header>
-                <b_text> February 2021 - May 2022</b_text>
+                <b_text> February 2021 - May 2022 </b_text>
                 <br>
                 <b_text>
                     At the Bhamla Lab, I researched frugal experimental hardware under Dr. Saad Bhamla, assistant professor in the School of
@@ -85,13 +85,9 @@
                     2021 International Genetically Engineered Machine (iGEM) competition yielded a "Best Hardware" award nomination and helped our
                     school recieve a gold medal and place top ten in the world.
                 </b_text>
-                <br><br>
-                <b_text>
-                    
-                </b_text>
                 <button type = "close" onclick = closeE1()> Close </button>
             </div>
-
+            
             <div class = "e2" id = "e2"> 
                 <b_header> Social Chair </b_header>
                 <b_text> Jan 2023 - Present </b_text>
@@ -113,6 +109,7 @@
                 </b_text>
                 <button type = "close" onclick = closeE2()> Close </button>
             </div>
+
 
         </div>
     </section>
