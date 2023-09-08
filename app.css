@@ -66,6 +66,16 @@ html {
     transform: translateY(-50%);
     text-align: center;
     color: white;
+    font-family: "Poppins";
+}
+
+#more {
+    width: 100%;
+    padding: 40px 0;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(more.jpeg);
+    background-size: cover;
+    background-position: center;
 }
 
 #experience {
